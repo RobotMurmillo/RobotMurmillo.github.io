@@ -2,10 +2,10 @@
 
 @font-face {
     font-family: 'Meadowbrook';
-    src:url('Meadowbrook.ttf.woff') format('woff'),
-        url('Meadowbrook.ttf.svg#Meadowbrook') format('svg'),
-        url('Meadowbrook.ttf.eot'),
-        url('Meadowbrook.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('webfonts_Meadowbrook/Meadowbrook.ttf.woff') format('woff'),
+        url('webfonts_Meadowbrook/Meadowbrook.ttf.svg#Meadowbrook') format('svg'),
+        url('webfonts_Meadowbrook/Meadowbrook.ttf.eot'),
+        url('webfonts_Meadowbrook/Meadowbrook.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +30,7 @@
     letter-spacing: 0.1em;
     padding: 0;
     margin: 0 0 0 400px;
-    background-color: yellowgreen;
+    background-color: blue;
 }
 
 @media screen and (max-width: 480px), (max-device-width: 480px) {
