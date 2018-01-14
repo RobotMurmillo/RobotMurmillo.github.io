@@ -37,17 +37,16 @@
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        background-color: wheat;
     }
 
     .title h1 {
-        font-size: 170px;
+        font-size: 10vh;
     }
 
     .title h3 {
         width: 100%; 
         text-align: center;
-        font-size: 45px;
+        font-size: 3vh;
         background-color: white;
         margin: 0;
         padding: 0; 
