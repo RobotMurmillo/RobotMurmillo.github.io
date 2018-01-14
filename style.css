@@ -70,9 +70,10 @@ nav ul li {
     }
 
     .title h1 {
-        font-size: 17vw;
+        font-size: 17.5vw;
         text-align: center;
         width: 100%;
+        color: rebeccapurple;
     }
 
     .title h3 {
