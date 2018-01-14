@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+.header_container {
+    width: 98%; 
+    background-color: pink;
+    margin: 0 auto;
+}
+
+.title h1 {
+    font-family: 'Meadowbrook';
+    font-weight: lighter;
+    font-size: 160px;
+    padding: 0; 
+    margin: 0;
+}
+
+.title h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+    letter-spacing: 0.1em;
+    padding: 0;
+    margin: 0 0 0 400px;
+    background-color: yellowgreen;
+}
+
+@media screen and (max-width: 480px), (max-device-width: 480px) {
+    .title {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+}
