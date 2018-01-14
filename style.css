@@ -10,9 +10,16 @@
     font-style: normal;
 }
 
+:root {
+    margin: 0;
+    padding:0;
+    background-color: #fefdfb;
+}
+
 .header_container {
-    width: 98%; 
+    width: 99%; 
     margin: 0 auto;
+    padding: 0; 
 }
 
 .title h1 {
@@ -21,6 +28,7 @@
     font-size: 160px;
     padding: 0; 
     margin: 0;
+    width: 800px;
 }
 
 .title h3 {
@@ -30,9 +38,31 @@
     font-weight: lighter;
     padding: 0;
     margin: 0 0 0 400px;
+    width: 400px;
 }
 
-@media screen and (max-width: 480px), (max-device-width: 480px) {
+nav {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+nav {
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 2%;
+    text-align: center;
+}
+
+@media screen and (max-device-width: 480px) {
+    /*Mobile*/
     .title {
         width: 100%;
         margin: 0 auto;
@@ -53,5 +83,33 @@
         padding: 0; 
     }
 
+    nav {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    /* small desktop screen */
+    .title {
+        background-color: #fefdfb;
+        width: 100%;
+        text-align: center;
+    }
+    .title h1 {
+        width: 100%; 
+        text-align: center;
+        font-size: 20vw;
+    }
+
+    .title h3 {
+        text-align: center; 
+        width: 100%;
+        margin: 0;
+        font-size: 7vw;
+    }
+
+    nav {
+        display: none;
+    }
+    
 }
