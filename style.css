@@ -61,10 +61,6 @@ nav ul li {
     text-align: center;
 }
 
-#mobileimage {
-    display: none;
-}
-
 .header {
     width: 95%;
     margin: 0 auto;
@@ -73,7 +69,6 @@ nav ul li {
 .header img {
     width: 100%;
     margin: 0 auto;
-}
 }
 
 @media screen and (max-device-width: 480px) {
@@ -107,6 +102,10 @@ nav ul li {
     #desktopimage {
         display: none;
     }
+
+    .header {
+        margin-top: 20px;
+    }
 }
 
 
@@ -135,8 +134,7 @@ nav ul li {
         display: none;
     }
 
-    #mobileimage {
-        display: none;
-    }
     
+}
+
 }
