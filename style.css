@@ -2,145 +2,434 @@
 
 @font-face {
     font-family: 'Meadowbrook';
-    src:url('webfonts_Meadowbrook/Meadowbrook.ttf.woff') format('woff'),
-        url('webfonts_Meadowbrook/Meadowbrook.ttf.svg#Meadowbrook') format('svg'),
-        url('webfonts_Meadowbrook/Meadowbrook.ttf.eot'),
-        url('webfonts_Meadowbrook/Meadowbrook.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('Meadowbrook.ttf.woff') format('woff'),
+        url('Meadowbrook.ttf.svg#Meadowbrook') format('svg'),
+        url('Meadowbrook.ttf.eot'),
+        url('Meadowbrook.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
     margin: 0;
-    padding:0;
+    padding: 0; 
     background-color: #fefdfb;
 }
-
-.header_container {
-    width: 99%; 
-    margin: 0 auto;
-    padding: 0; 
-}
-
 .title h1 {
     font-family: 'Meadowbrook';
     font-weight: lighter;
-    font-size: 160px;
-    padding: 0; 
-    margin: 0;
-    width: 800px;
 }
-
 .title h3 {
     font-family: 'Amatic SC', cursive;
     font-size: 35px;
     letter-spacing: 0.1em;
-    font-weight: lighter;
     padding: 0;
-    margin: 0 0 0 400px;
-    width: 400px;
 }
-
 nav {
     font-family: 'Amatic SC', cursive;
     font-weight: lighter;
     font-size: 28px;
 }
-
-nav {
+.video_header {
     float: right;
-    width: 100%;
-    text-align: right;
-    padding: 10px;
+    display: block;  
 }
-
-nav ul li {
-    display: inline-block;
-    text-decoration: none;
-    padding: 0 2%;
+.video_header h1, .about_me h1, .about_you h1 {
+    font-family: 'Meadowbrook';
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+.video_header h2, h3 {
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+.video_header h2 {
+    margin-bottom: -60px;
+}
+.video_header h3 {
+    text-align: right;
+    margin-right: 10%;
+    margin-top: -30px;
+}
+.youtube_video {
+    display: block;
+}
+.about_me_container, .about_you_container {
+    width: 1200px;
+    height: 500px;
+    margin: 10% auto;
+    }
+.about_me_image {
+    width: 55%;
+    margin: -2% 0 0 -2%;
+}
+.about_you_image {
+    width: 55%;;
+    margin: -45% 0 0 48%;
+}
+.about_me_image img {
+    width: 100%;
+}
+.about_you_image img {
+    width: 100%; 
+}
+.about_me {
+    width: 480px;
+    margin: -35% 0 0 56%;
+}
+.about_you {
+    width: 480px;
+    margin: 4%;
+}
+.about_me_text {
+    width: 100%;
+}
+.about_me p, .about_you p {
+    font-family: 'Georgia';
+    font-size: 16px;
+    line-height: 34px;
+}
+.about_me h1, .about_you h1 {
+    font-size: 125px;
+}
+.about_me_line, .about_you_line {
+    background-color: black;
+    width: 50%;
+    height: 3px;
+}
+.testimonial_container {
+    width: 700px;
+    margin: 25% auto;
+    font-family: 'Georgia';
+}
+.testimonial_header h1{
+    font-size: 125px;
+    font-family: 'Meadowbrook';
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
-
-.header {
-    width: 95%;
+.testimonial_line {
+    background-color: black;
+    width: 50%;
+    height: 3px;
     margin: 0 auto;
 }
-
-.header img {
-    width: 100%;
-    margin: 0 auto;
+.testimonial {
+    width: 500px;
+    margin: 0 auto; 
+    padding: 0;
+    font-style: italic;
+    text-align: right;
+}
+.testimonies {
+    width: 90%; 
+    height: 80px;
+    margin: 0 auto; 
+    padding: 0;
+    color: gray;
+}
+.testimonies * {
+    display:inline-block;
+    vertical-align: middle;  
 }
 
-@media screen and (max-device-width: 480px) {
-    /*Mobile*/
-    .title {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .title h1 {
-        font-size: 19vw;
-        text-align: center;
-        width: 100%;
-    }
-
-    .title h3 {
-        width: 100%; 
-        text-align: center;
-        font-size: 60px;
-        font-weight: lighter;
-        background-color: white;
-        margin: 5px 0 0 0;
-        padding: 0; 
-    }
-
-    nav {
-        display: none;
-    }
-
-    #desktopimage {
-        display: none;
-    }
-
-    .header {
-        margin-top: 20px;
-    }
+.quote p {
+    text-align: center;
+    font-size:18px;
+}
+.quote h3 {
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.left_quote, .right_quote {
+    font-size: 30px;
+    font-family: 'Meadowbrook';
+}
+.left_quote {
+    margin-bottom: -50px;
+    padding: 0;
+    text-align: left;
+}
+.right_quote {
+    text-align: right;
+    margin-top: -30px;
+    padding: 0;
 }
 
-
-
-@media screen and (max-width: 600px) {
-    /* small desktop screen */
+@media screen and (max-width:650px), (max-device-width: 600px) {
+    /* Mobile Version */
     .title {
         background-color: #fefdfb;
         width: 100%;
         text-align: center;
     }
+
     .title h1 {
-        width: 100%; 
-        text-align: center;
-        font-size: 20vw;
+        font-size: 75px;
+        margin: 0;
+        padding: 0;
     }
 
     .title h3 {
-        text-align: center; 
-        width: 100%;
+        font-size: 25px;
         margin: 0;
-        font-size: 7vw;
+        padding: 0;
+        text-align: center;
     }
-
-    nav {
-        display: none;
-    }    
-    
     #desktopimage {
         display: none;
     }
+    .header img {
+        margin: 50px 5% 130px 5%;
+        width: 90%;
+   }    
+    nav {
+        display: none;
+    }
+    .video_header {
+        float: left;
+        margin: 3%;
+    }
+    .video_header h1 {
+        font-size: 100px;
+    }
+    .video_header h2 {
+        font-size: 40px;
+        margin-bottom: -35px;
+    }
+    .video_header h3 {
+        font-size:  28px;
+        margin-top: -15px;
+    }
+    .youtube_video { 
+        margin:  2.5%;
+    }
+    .youtube_video iframe {
+        width: 450px;
+        height: 260px;
+    }
+    .about_me_container, .about_you_container {
+        width:100%;
+        height: auto;
+    }
+    .about_me_image, .about_me, .about_you_image, .about_you {
+        margin: 0 auto;
+        display: block;
+    }
+    .about_me_image, .about_you_image {
+        width: 90%;
+    }
+    .about_me, .about_you {
+        width: 90%;
+    }
+    .about_me p, .about_you p {
+        font-size: 16px;
+        line-height: 50px;
+    }
+    .testimonial_container {
+        width: 100%;
+    }
+    .testimonial_header h1 {
+        font-size: 130px;
+    }
+    .testimonial {
+        width: 90%;
+    }
+
+    .quote p {
+        text-align: center;
+        font-size:30px;
+    }
+    .quote h3 {
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width:650px) {
+    /* Desktop Version */
+    nav {
+        float: right;
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+    }
+
+    nav ul li {
+        padding: 0 2%;
+        text-align: center;
+    }
+
+    .header {
+        text-align: center;
+        margin: 100px 2.5% 150px 2.5%;
+        max-width: 95%;
+    }
+
     #mobileimage {
         display: none;
+    }
+
+    .header img {
+        width: 100%; 
+    }
+
+    .title h1 {
+        font-size: 160px;
+        margin: 0 0.5%;
+    }
+
+    .title h3 {
+        margin: 0;
+        padding-left: 450px;
+    }
+
+    .video_header {
+        margin: 0 5% 5% 0;
+    }
+
+    .video_header h1 {
+        font-size: 170px;
+    }
+
+    
+    .video_header h2 {
+        font-size: 55px;
+        font-weight: lighter;
+    }
+    
+    
+    .video_header h3 {
+        font-size:  40px;
+    }
+
+
+    nav ul li {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .youtube_video iframe {
+        width: 770px;
+        height: 430px;
+        margin: 0 15% 10% 15%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 900px) and (min-width:650px), (max-device-width: 900px){
+    /* IN BETWEEN STAGE/ TABLET */
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+    .title h1 {
+        font-size: 160px;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .title h3 {
+        font-size: 25px;
+        margin: 0;
+        padding: 0 0 0 240px;
+        text-align: center;  
+    }
+    .header {
+        text-align: center;
+        margin: 100px 2.5%;
+        width: 95%;
+    }
+    #mobileimage {
+        display: none;
+    }
+    .video_header { 
+        margin: 0 2.5% 5% 0;
+    }
+    .video_header h1 {
+        font-size: 120px;
+    }
+    .video_header h2 { 
+        margin-bottom: -40px;
+        font-size: 45px;
+    }
+    .video_header h3 {
+        margin-top: -20px;
+        font-size: 30px
+    }
+    .youtube_video { 
+        margin: 5%;
+    }
+    .youtube_video iframe {
+        width: 610px;
+        height: 340px;
+        margin: 0;
+    }
+    nav {
+        display: none;
+    }  
+    .about_me_container, .about_you_container {
+        width:100%;
+        height: auto;
+    }
+    .about_me_image, .about_me, .about_you_image, .about_you {
+        margin: 0 auto;
+        display: block;
+    }    
+    .about_me_image, .about_you_image {
+        width: 90%;
+    }
+    .about_me, .about_you {
+        width: 90%;
+    }
+    .about_me p, .about_you p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px), (max-device-width:320px;) {
+    
+    .video_header {
+        margin: 0 2% 5% 2%;
+    }    
+    .video_header h1 {
+        font-size: 77px;
+    }
+    .video_header h2 {
+        font-size: 30px;
+        margin-bottom: -25px;
+        
+    }
+    .video_header h3 {
+        font-size: 25px;
+        margin-top: -15px;
+    }
+    .youtube_video {
+        width:100%;
+        margin: 0 auto; 
+    }
+    .youtube_video iframe {
+        width: 375px;
+        height: 215px;
+        margin: 0 auto; 
+    }
+    .about_me h1, .about_you h1 {
+        font-size: 80px;
+    }      
+    .about_me p, .about_you p {
+        font-size: 12px;
     }
 }
