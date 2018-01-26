@@ -30,33 +30,92 @@ nav {
     font-weight: lighter;
     font-size: 28px;
 }
-.video_header {
-    float: right;
-    display: block;  
+
+
+.video_container {
+    margin: 5% auto;
+    width: 900px;
 }
-.video_header h1, .about_me h1, .about_you h1 {
+
+
+.youtube_video iframe {
+    width: 650px;
+    height: 365px;
+    margin: 5% 0;
+}
+
+.video_header h1 {
     font-family: 'Meadowbrook';
     font-weight: lighter;
+    font-size: 170px;
     margin: 0;
     padding: 0;
-}
-.video_header h2, h3 {
-    font-family: 'Amatic SC', cursive;
-    margin: 0;
-    padding: 0;
-    font-weight: lighter;
-}
-.video_header h2 {
-    margin-bottom: -60px;
-}
-.video_header h3 {
     text-align: right;
-    margin-right: 10%;
-    margin-top: -30px;
 }
-.youtube_video {
-    display: block;
+
+.video_header h2, .video_header h3 {
+    font-family: 'Amatic SC'; 
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0; 
+    padding: 0;
+    text-align: left;
 }
+
+.video_header { 
+    width: 70%;
+    margin: 0 0 0 200px;
+}
+
+.video_header h2 {
+    margin: 0 0 -50px 0;
+    padding: 0; 
+}
+
+.video_header h3 {
+    margin: -30px 0 0 0; 
+    padding: 0;
+    text-align: right;
+}
+
+@media screen and (max-device-width: 500px) {
+    body {
+        background-color: pink;
+    }
+
+    .video_container {
+        width: 80%; 
+        margin: 0 auto;
+    }
+
+    .youtube_video iframe {
+        width: 100%; 
+        height: 400px;
+        margin: 0 auto;
+    } 
+
+    .video_header {
+        width: 100%; 
+        margin: 5% auto;
+    }
+
+    .video_header h1 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .video_header h3 {
+        margin: -30px 70px 0 0;
+        padding: 0;
+        font-size: 45px;
+    }
+
+    .video_header h2 {
+        margin: 0 0 -60px 0;
+        font-size: 45px;
+    }
+}
+
 .about_me_container, .about_you_container {
     width: 1200px;
     height: 500px;
@@ -94,6 +153,10 @@ nav {
 }
 .about_me h1, .about_you h1 {
     font-size: 125px;
+    font-family: 'Meadowbrook'; 
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
 }
 .about_me_line, .about_you_line {
     background-color: black;
@@ -194,28 +257,7 @@ nav {
     nav {
         display: none;
     }
-    .video_header {
-        float: left;
-        margin: 3%;
-    }
-    .video_header h1 {
-        font-size: 100px;
-    }
-    .video_header h2 {
-        font-size: 40px;
-        margin-bottom: -35px;
-    }
-    .video_header h3 {
-        font-size:  28px;
-        margin-top: -15px;
-    }
-    .youtube_video { 
-        margin:  2.5%;
-    }
-    .youtube_video iframe {
-        width: 450px;
-        height: 260px;
-    }
+
     .about_me_container, .about_you_container {
         width:100%;
         height: auto;
@@ -294,35 +336,9 @@ nav {
         padding-left: 450px;
     }
 
-    .video_header {
-        margin: 0 5% 5% 0;
-    }
-
-    .video_header h1 {
-        font-size: 170px;
-    }
-
-    
-    .video_header h2 {
-        font-size: 55px;
-        font-weight: lighter;
-    }
-    
-    
-    .video_header h3 {
-        font-size:  40px;
-    }
-
-
     nav ul li {
         display: inline-block;
         text-decoration: none;
-    }
-
-    .youtube_video iframe {
-        width: 770px;
-        height: 430px;
-        margin: 0 15% 10% 15%;
     }
 
 }
@@ -353,28 +369,7 @@ nav {
     #mobileimage {
         display: none;
     }
-    .video_header { 
-        margin: 0 2.5% 5% 0;
-    }
-    .video_header h1 {
-        font-size: 120px;
-    }
-    .video_header h2 { 
-        margin-bottom: -40px;
-        font-size: 45px;
-    }
-    .video_header h3 {
-        margin-top: -20px;
-        font-size: 30px
-    }
-    .youtube_video { 
-        margin: 5%;
-    }
-    .youtube_video iframe {
-        width: 610px;
-        height: 340px;
-        margin: 0;
-    }
+
     nav {
         display: none;
     }  
@@ -399,30 +394,7 @@ nav {
 
 @media screen and (max-width: 480px), (max-device-width:320px) {
     
-    .video_header {
-        margin: 0 2% 5% 2%;
-    }    
-    .video_header h1 {
-        font-size: 77px;
-    }
-    .video_header h2 {
-        font-size: 30px;
-        margin-bottom: -25px;
-        
-    }
-    .video_header h3 {
-        font-size: 25px;
-        margin-top: -15px;
-    }
-    .youtube_video {
-        width:100%;
-        margin: 0 auto; 
-    }
-    .youtube_video iframe {
-        width: 375px;
-        height: 215px;
-        margin: 0 auto; 
-    }
+
     .about_me h1, .about_you h1 {
         font-size: 80px;
     }      
