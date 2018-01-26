@@ -102,7 +102,7 @@ nav {
 }
 .testimonial_container {
     width: 700px;
-    margin: 25% auto;
+    margin: 25% auto 10% auto;
     font-family: 'Georgia';
 }
 .testimonial_header h1{
@@ -113,7 +113,7 @@ nav {
     padding: 0;
     text-align: center;
 }
-.testimonial_line, .courses_line {
+.testimonial_line {
     background-color: black;
     width: 50%;
     height: 3px;
@@ -477,11 +477,25 @@ nav {
 }
 
 .courses_header {
+    width: 500px;
+    background: pink;
+    margin:  0 100px 100px 100px;
+}
+
+.courses_header h1 {
     font-size: 125px;
     font-family: 'Meadowbrook';
     font-weight: lighter;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+ .courses_line {
+    background-color: black;
+    width: 250px;
+    height: 3px;
+    margin: 0 auto;
 }
 .course_module button {
     float: right;
