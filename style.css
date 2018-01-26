@@ -400,7 +400,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 480px), (max-device-width:320px;) {
+@media screen and (max-width: 480px), (max-device-width:320px) {
     
     .video_header {
         margin: 0 2% 5% 2%;
@@ -430,6 +430,137 @@ nav {
         font-size: 80px;
     }      
     .about_me p, .about_you p {
+        font-size: 12px;
+    }
+}
+
+.courses_container {
+    margin: 150px auto;
+}
+
+.course_module {
+    border: 1px solid black;
+    width: 800px;
+    margin: 100px auto;
+}
+
+.course_module h1 {
+    font-family: 'Meadowbrook';
+    font-size: 65px;
+    font-weight: lighter;
+    margin: -50px 0 0 -10px;
+    padding: 5px 20px 5px 5px;
+    display: inline-block;
+    background-color: white;
+    vertical-align: text-top;
+}
+
+.course_module h2 {
+    font-family: 'Meadowbrook';
+    font-size: 70px;
+    font-weight: lighter;
+    text-align: right;
+    padding: 0; 
+    margin: -45px -10px 0 0;
+    float: right;
+    background-color: white;
+    width:110px;
+}
+
+.course_module .taster {
+    width: 55%;
+    margin: 2.5% 4% 0 4%;
+    font-size: 18px;
+}
+
+.course_text {
+    display: none;
+    width: 55%;
+    padding: 0 4%;
+}
+
+
+
+.course_module button {
+    float: right;
+    background-color: black;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    margin: 50px -60px 0 0;
+    padding: 0;
+    color: white;
+    font-family: 'Meadowbrook';
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+.bottom_button {
+    font-family: 'Meadowbrook';
+    cursor: pointer;
+    display: table;
+    margin: 0 auto;
+    font-size: 60px;
+    padding: 3px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.course_text p {
+    font-size: 17px;
+}
+
+@media screen and (max-device-width: 500px) {
+    .courses_container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .course_module {    
+        width: 90%; 
+        margin: 100px auto;
+    }
+
+    .course_module h1 {
+        font-size: 90px;
+    }
+
+    .course_module h2 {
+        margin: 0;
+        text-align: left;
+        font-size: 90px;
+        width: 50%;
+        float: left;
+        margin: 1% 1% 2% 5%;
+
+    }
+    .course_module .taster {
+        width: 80%;
+        margin: 15% auto 0 auto;
+        font-size: 13px;
+        display: block;
+    }
+    .course_module button {
+        float: right;
+        background-color: black;
+        border: 1px solid black;
+        width: 250px;
+        height: 60px;
+        margin: 20px 40px 0 0;
+        padding: 0;
+        color: white;
+        font-family: 'Meadowbrook';
+        font-weight: lighter;
+        font-size: 45px;
+        vertical-align: text-top;
+    }
+
+    .course_text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .course_text p {
         font-size: 12px;
     }
 }

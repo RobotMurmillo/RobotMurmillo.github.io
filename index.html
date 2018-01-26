@@ -15,6 +15,12 @@
                     testimony.eq(i).fadeIn(400).delay(8500).fadeOut(400, carousel);
                     i = ++i % testimony.length;
                 })();
+                $('.bottom_button').click(function() {
+                    $(this).text(function (i,v) { 
+                        return v === '+' ? '-':'+'
+                        })   
+                    $(this).parents('.course_module').find('.course_text').slideToggle(300);
+                });  
             });           
         </script>
         <div class='title'>
@@ -108,6 +114,34 @@
                         </div>
                         <div class='right_quote'><h1>"</h1></div>
                     </div>
-                </div>    
+                </div> 
+                <div class='courses_container'>
+                        <div class='course_module'>
+                            <h1>Resonance Re-patterning</h1>
+                            <h2>£100</h2>
+                            <button>Enquire Now</button>
+                            <p class= 'taster'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                            <div class='course_text'>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                            </div>
+                            <div class='bottom'><h4 class='bottom_button'>+</h4></div>
+                        </div>
+                        <div class='course_module'>
+                                <h1>Kickstart Package</h1>
+                                <h2>£222</h2>
+                                <button>Enquire Now</button>
+                                <p class= 'taster'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                <div class='course_text'>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
+                                </div>
+                                <div class='bottom'><h4 class='bottom_button'>+</h4></div>
+                            </div>
+                    </div>   
     </body>
 </html>
