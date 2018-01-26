@@ -113,7 +113,7 @@ nav {
     padding: 0;
     text-align: center;
 }
-.testimonial_line {
+.testimonial_line, .courses_line {
     background-color: black;
     width: 50%;
     height: 3px;
@@ -476,8 +476,13 @@ nav {
     padding: 0 4%;
 }
 
-
-
+.courses_header {
+    font-size: 125px;
+    font-family: 'Meadowbrook';
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
 .course_module button {
     float: right;
     background-color: black;
