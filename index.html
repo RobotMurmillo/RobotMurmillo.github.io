@@ -15,6 +15,7 @@
                     testimony.eq(i).fadeIn(400).delay(8500).fadeOut(400, carousel);
                     i = ++i % testimony.length;
                 })();
+
                 $('.bottom_button').click(function() {
                     $(this).text(function (i,v) { 
                         return v === '+' ? '-':'+'
