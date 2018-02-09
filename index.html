@@ -21,7 +21,45 @@
                         return v === '+' ? '-':'+'
                         })   
                     $(this).parents('.course_module').find('.course_text').slideToggle(300);
-                });  
+                }); 
+                $(window).scroll(function () {
+                    var scrolltop = $(window).scrollTop();
+                    if (scrolltop < 1500) {
+                        $('.about_me_line').css('max-width','240px');
+                    } else if (scrolltop > 2000) {
+                        $('.about_me_line').css('max-width','400px');
+                    } else {
+                        $('.about_me_line').css('max-width',((scrolltop - 1200))/2);
+                    }
+                    if (scrolltop < 2100) {
+                        $('.about_you_line').css('max-width','240px');
+                    } else if (scrolltop > 2600) {
+                        $('.about_you_line').css('max-width','400px');
+                    } else {
+                        $('.about_you_line').css('max-width',((scrolltop - 1800))/2);
+                    }
+                    if (scrolltop < 3000) {
+                        $('.testimonial_line').css('max-width','240px');
+                    } else if (scrolltop > 3500) {
+                        $('.testimonial_line').css('max-width','420px');
+                    } else {
+                        $('.testimonial_line').css('max-width',((scrolltop - 2650))/2);
+                    }
+                    if (scrolltop < 3600) {
+                        $('.courses_line').css('max-width','240px');
+                    } else if (scrolltop > 4100) {
+                        $('.courses_line').css('max-width','400px');
+                    } else {
+                        $('.courses_line').css('max-width',((scrolltop - 3300))/2);
+                    }
+                    if (scrolltop < 4500) {
+                        $('.contact_line').css('max-width','240px');
+                    } else if (scrolltop > 5000) {
+                        $('.contact_line').css('max-width','400px');
+                    } else {
+                        $('.contact_line').css('max-width',((scrolltop - 4200))/2);
+                    }
+                });
             });           
         </script>
         <div class='title'>

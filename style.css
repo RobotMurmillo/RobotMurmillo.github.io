@@ -160,7 +160,8 @@ nav {
 }
 .about_me_line, .about_you_line {
     background-color: black;
-    width: 50%;
+    max-width: 240px;
+    min-width: 240px;
     height: 3px;
 }
 .testimonial_container {
@@ -178,7 +179,8 @@ nav {
 }
 .testimonial_line {
     background-color: black;
-    width: 50%;
+    max-width: 240px;
+    min-width: 240px;
     height: 3px;
     margin: 0 auto;
 }
@@ -294,7 +296,8 @@ select {
 
  .contact_line {
     background-color: black;
-    width: 250px;
+    max-width: 240px;
+    min-width: 240px;
     height: 3px;
     margin: auto;
 }
@@ -571,7 +574,8 @@ select {
 
  .courses_line {
     background-color: black;
-    width: 250px;
+    max-width: 240px;
+    min-width: 240px;
     height: 3px;
 }
 .course_module button {
