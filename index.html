@@ -59,7 +59,29 @@
                     } else {
                         $('.contact_line').css('max-width',((scrolltop - 4200))/2);
                     }
+
+                    scrolltop > 700 ? $('.video_header h2').fadeIn(500) : $('.video_header h2').hide();
+                    scrolltop > 700 ? $('.video_header h1').fadeIn(600).delay(500) : $('.video_header h1').hide();
+                    scrolltop > 750 ? $('.video_header h3').fadeIn(500).delay(1300) : $('.video_header h3').hide();    
+
                 });
+
+                $(window).bind('scroll', function(e){
+                parallaxScroll();
+                });
+                function parallaxScroll(){
+                    var scrolledY = $(window).scrollTop();
+                    scrolledY > 700 && scrolledY < 3000 ? 
+                    $('.about_me_image').css('top','+' + (((scrolledY-1500)*0.1)) + 'px') 
+                    : $('.about_me_image').css('top','+' + 0 + 'px');
+                    scrolledY > 2000 && scrolledY < 4000 ? 
+                    $('.about_you_image').css('top','+' + (((scrolledY-700)*0.09)) + 'px') 
+                    : $('.about_you_image').css('top','+' + 200 + 'px');
+                    scrolledY > 600 && scrolledY < 1700 ? 
+                    $('.youtube_video iframe').css('top','+' + (((scrolledY)*0.05)) + 'px') 
+                    : $('.youtube_video iframe').css('top','+' + 100 + 'px');
+  
+                }
             });           
         </script>
         <div class='title'>
@@ -69,7 +91,7 @@
         <nav> 
             <ul>
                 <li>About</li>
-                <li>Courses</li>
+                <li>Programmes</li>
                 <li>Resources</li>
                 <li>Contact</li>
             </ul>
@@ -158,12 +180,12 @@
                 </div> 
                 <div class='courses_container'>
                     <div class= 'courses_header'>
-                            <h1>Courses</h1>
+                            <h1>Programmes</h1>
                             <div class='courses_line'></div>
                         </div>
                         <div class='course_module'>
                             <h1>Resonance Re-patterning</h1>
-                            <h2>£100</h2>
+                            <h2>&pound;100</h2>
                             <button>Enquire Now</button>
                             <p class= 'taster'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
                             <div class='course_text'>
@@ -176,7 +198,7 @@
                         </div>
                         <div class='course_module'>
                                 <h1>Kickstart Package</h1>
-                                <h2>£222</h2>
+                                <h2>&pound;222</h2>
                                 <button>Enquire Now</button>
                                 <p class= 'taster'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero.</p>
                                 <div class='course_text'>
