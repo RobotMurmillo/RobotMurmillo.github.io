@@ -24,45 +24,41 @@
                 }); 
                 $(window).scroll(function () {
                     var scrolltop = $(window).scrollTop();
-                    if (scrolltop < 1500) {
+                    if (scrolltop < 1700) {
                         $('.about_me_line').css('max-width','240px');
-                    } else if (scrolltop > 2000) {
-                        $('.about_me_line').css('max-width','400px');
+                    } else if (scrolltop > 2200) {
+                        $('.about_me_line').css('max-width','490px');
                     } else {
                         $('.about_me_line').css('max-width',((scrolltop - 1200))/2);
                     }
-                    if (scrolltop < 2100) {
+                    if (scrolltop < 2300) {
                         $('.about_you_line').css('max-width','240px');
-                    } else if (scrolltop > 2600) {
-                        $('.about_you_line').css('max-width','400px');
+                    } else if (scrolltop > 3000) {
+                        $('.about_you_line').css('max-width','450px');
                     } else {
-                        $('.about_you_line').css('max-width',((scrolltop - 1800))/2);
+                        $('.about_you_line').css('max-width',((scrolltop - 2100))/2);
                     }
-                    if (scrolltop < 3000) {
+                    if (scrolltop < 3400) {
                         $('.testimonial_line').css('max-width','240px');
-                    } else if (scrolltop > 3500) {
+                    } else if (scrolltop > 4000) {
                         $('.testimonial_line').css('max-width','420px');
                     } else {
-                        $('.testimonial_line').css('max-width',((scrolltop - 2650))/2);
+                        $('.testimonial_line').css('max-width',((scrolltop - 2900))/2);
                     }
-                    if (scrolltop < 3600) {
+                    if (scrolltop < 3900) {
                         $('.courses_line').css('max-width','240px');
-                    } else if (scrolltop > 4100) {
-                        $('.courses_line').css('max-width','400px');
+                    } else if (scrolltop > 4400) {
+                        $('.courses_line').css('max-width','450px');
                     } else {
-                        $('.courses_line').css('max-width',((scrolltop - 3300))/2);
+                        $('.courses_line').css('max-width',((scrolltop - 3500))/2);
                     }
-                    if (scrolltop < 4500) {
+                    if (scrolltop < 4700) {
                         $('.contact_line').css('max-width','240px');
-                    } else if (scrolltop > 5000) {
+                    } else if (scrolltop > 5200) {
                         $('.contact_line').css('max-width','400px');
                     } else {
-                        $('.contact_line').css('max-width',((scrolltop - 4200))/2);
+                        $('.contact_line').css('max-width',((scrolltop - 4400))/2);
                     }
-
-                    scrolltop > 700 ? $('.video_header h2').fadeIn(500) : $('.video_header h2').hide();
-                    scrolltop > 700 ? $('.video_header h1').fadeIn(600).delay(500) : $('.video_header h1').hide();
-                    scrolltop > 750 ? $('.video_header h3').fadeIn(500).delay(1300) : $('.video_header h3').hide();    
 
                 });
 
@@ -79,7 +75,7 @@
                     : $('.about_you_image').css('top','+' + 200 + 'px');
                     scrolledY > 600 && scrolledY < 1700 ? 
                     $('.youtube_video iframe').css('top','+' + (((scrolledY)*0.05)) + 'px') 
-                    : $('.youtube_video iframe').css('top','+' + 100 + 'px');
+                    : $('.youtube_video iframe').css('top','+' + 90 + 'px');
   
                 }
             });           
