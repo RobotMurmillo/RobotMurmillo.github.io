@@ -264,51 +264,36 @@ nav {
     margin:0 auto;
 }
 
-input, textarea, select {
-    display: block;
-    margin: 20px auto;
-    border: 1px black solid;
-    background-color: #fefdfb;
+.contact_container {
+    width:750px; 
+    margin:0 auto;
 }
 
-input {
-    line-height:20px;
-    width: 500px;
-}
-
-span {
-    display: inline-block;
-}
-
-textarea {
-    resize: vertical;
-    height: 100px;
-    width: 498px;
-}
-
-
-form {
-    width: 100%; 
-    margin-top: 70px;
-}
-
-select {
-    height: 25px;
-	-webkit-border-radius: 0;
-	border: 0;
-	outline: 1px black solid;
-    outline-offset: -1px;
-    width: 502px;
-}
-
-.submit { 
-    width: 150px;
-    height: 40px;
+.submit {
+    width: 200px;
+    height: 60px;
     color: white; 
     background-color: black;
     font-family: 'Amatic SC';
-    font-size: 25px;
+    font-size: 30px;
     font-weight: lighter;
+    text-align: center;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+
+a,a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.contact_text {
+    text-align: center;
+    width: 700px;
+    margin: 50px auto;
+    line-height: 25px;
+    font-size: 17px;
 }
 
 .contact_header {
@@ -561,10 +546,10 @@ select {
 
 .course_module h1 {
     font-family: 'Amatic SC';
-    font-size: 45px;
-    letter-spacing: 0.1em;
+    font-size: 40px;
+    letter-spacing: 0.15em;
     font-weight: lighter;
-    margin: -50px 0 0 -10px;
+    margin: -40px 0 0 -10px;
     padding: 5px 20px 5px 5px;
     display: inline-block;
     background-color: #fefdfb;
