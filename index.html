@@ -10,9 +10,13 @@
         <script>
             $(document).ready(function() {
                 var testimony = $('div[id^="testimonial-"]').hide(),
+                rquote = $('.right_quote').hide(),
+                lquote = $('.left_quote').hide(),
                 i = 0;
                 (function carousel() { 
                     testimony.eq(i).fadeIn(400).delay(8500).fadeOut(400, carousel);
+                    rquote.fadeIn(400).delay(8500).fadeOut(400);
+                    lquote.fadeIn(400).delay(8500).fadeOut(400);
                     i = ++i % testimony.length;
                 })();
 
@@ -170,6 +174,23 @@
                                     <p>I felt drawn to Katheryn the moment I met her, not just as a coach but also as a person.</p>
                                     <h3>- Ann Skinner, "Coach to Contribute"</h3>
                                 </div>
+                                <div id="testimonial-8" class='quote'>
+                                    <p>Everybody always comes out of a session saying ‘Wow that was amazing!’ It’s always the right question, always covers what’s needed. Katheryn has a lot of empathy, is a good listener, helps them get into the issue, and leaves space so people can open up. Katheryn is very experienced and has natural healing ability and helps clients move forward when in a place of uncertainty and to feel confident.</p>
+                                    <h3>- Holly Mullin, Detox Retreat Director, Devon</h3>
+                                </div>
+                                <div id="testimonial-9" class='quote'>
+                                    <p>Katheryn is a very gifted and intuitive therapist and I highly recommend her sessions. The Resonance Repatterning sessions I’ve had with Katheryn have been very supportive and helpful and have formed a key part of what has helped me navigate my way through some challenging times over the last few years. Most importantly I’ve seen many real changes in terms of my situation and relationships after the sessions with Katheryn.</p>
+                                    <h3>- Astrologer and writer, Dorset</h3>
+                                </div>
+                                <div id="testimonial-10" class='quote'>
+                                    <p>Katheryn is a delightful, caring and knowledgeable coach. I have already seen a shift in several areas since my last session with Katheryn. She definitely gets a 5-star rating from me.</p>
+                                    <h3>- Gwynne Curry, North Carolina</h3>
+                                </div>
+                                <div id="testimonial-12" class='quote'>
+                                    <p>I am now starting to live the life I had planned with Kathryn's help, we are still planning to keep in touch along the way to ensure I am reminded of the journey we have taken, Katheryn helps me to reflect all the time, praising and never underestimating the achievements made in facing into some difficult past experiences and not letting these cloud the future. I am happy and content, and very calm about my life ahead. Thank you Katheryn, I wouldn't be here without you.</p>
+                                    <h3>- Helen Bennett, Devon</h3>
+                                </div>
+                                
                         </div>
                         <div class='right_quote'><h1>"</h1></div>
                     </div>

@@ -215,7 +215,8 @@ nav {
     margin: 0 auto;
 }
 .testimonial {
-    width: 500px;
+    width: 600px;
+    height: 200px;
     margin: 0 auto; 
     padding: 0;
     font-style: italic;
@@ -223,8 +224,7 @@ nav {
 }
 .testimonies {
     width: 90%; 
-    height: 80px;
-    margin: 0 auto; 
+    margin: -10px auto 0 auto; 
     padding: 0;
     color: gray;
 }
@@ -237,6 +237,8 @@ nav {
     text-align: center;
     font-size:18px;
 }
+
+
 .quote h3 {
     text-align: center;
     font-size: 18px;
@@ -249,14 +251,16 @@ nav {
     font-family: 'Meadowbrook';
 }
 .left_quote {
-    margin-bottom: -50px;
+    margin-bottom: -70px;
     padding: 0;
     text-align: left;
+    display: none;
 }
 .right_quote {
     text-align: right;
-    margin-top: -30px;
+    margin-top: -60px;
     padding: 0;
+    display: none;
 }
 
 .contact_container {
