@@ -268,11 +268,6 @@ nav {
     margin:0 auto;
 }
 
-.contact_container {
-    width:750px; 
-    margin:0 auto;
-}
-
 .submit {
     width: 200px;
     height: 60px;
@@ -540,6 +535,14 @@ a,a:active {
 
 .courses_container {
     margin: 150px auto;
+}
+
+.courses_info {
+    width: 750px;
+    margin: 50px auto 0 auto;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
 }
 
 .course_module {
