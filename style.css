@@ -282,7 +282,7 @@ nav {
 }
 
 
-a,a:active {
+a, a:active {
     text-decoration: none;
     color: white;
 }
@@ -473,66 +473,6 @@ a,a:active {
 
 }
 
-@media screen and (max-width: 900px) and (min-width:650px), (max-device-width: 900px){
-    /* IN BETWEEN STAGE/ TABLET */
-    .title {
-        width: 100%;
-        text-align: center;
-    }
-    .title h1 {
-        font-size: 160px;
-        margin: 0;
-        padding: 0;
-        display: block;
-    }
-    .title h3 {
-        font-size: 25px;
-        margin: 0;
-        padding: 0 0 0 240px;
-        text-align: center;  
-    }
-    .header {
-        text-align: center;
-        margin: 100px 2.5%;
-        width: 95%;
-    }
-    #mobileimage {
-        display: none;
-    }
-
-    nav {
-        display: none;
-    }  
-    .about_me_container, .about_you_container {
-        width:100%;
-        height: auto;
-    }
-    .about_me_image, .about_me, .about_you_image, .about_you {
-        margin: 0 auto;
-        display: block;
-    }    
-    .about_me_image, .about_you_image {
-        width: 90%;
-    }
-    .about_me, .about_you {
-        width: 90%;
-    }
-    .about_me p, .about_you p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px), (max-device-width:320px) {
-    
-
-    .about_me h1, .about_you h1 {
-        font-size: 80px;
-    }      
-    .about_me p, .about_you p {
-        font-size: 12px;
-    }
-}
-
 .courses_container {
     margin: 150px auto;
 }
@@ -549,6 +489,7 @@ a,a:active {
     border: 1px solid black;
     width: 800px;
     margin: 100px auto;
+    position: relative;
 }
 
 .course_module h1 {
@@ -556,11 +497,13 @@ a,a:active {
     font-size: 40px;
     letter-spacing: 0.15em;
     font-weight: lighter;
-    margin: -40px 0 0 -10px;
+    position: absolute;
     padding: 5px 20px 5px 5px;
     display: inline-block;
     background-color: #fefdfb;
     vertical-align: text-top;
+    top: -65px;
+    left: -10px;
 }
 
 .course_module h2 {
@@ -568,23 +511,25 @@ a,a:active {
     font-size: 70px;
     font-weight: lighter;
     text-align: right;
-    padding: 0; 
+    padding: 0 0 0 15px; 
     margin: -45px -10px 0 0;
     float: right;
     background-color:#fefdfb;
-    width:110px;
 }
 
 .course_module .taster {
     width: 55%;
-    margin: 2.5% 4% 0 4%;
+    margin: 50px 4% 0 4%;
     font-size: 18px;
+    text-align: justify;
 }
 
 .course_text {
     display: none;
-    width: 55%;
+    width: 70%;
     padding: 0 4%;
+    margin: 0;
+    text-align: justify;
 }
 
 .courses_header {
@@ -608,18 +553,23 @@ a,a:active {
     height: 3px;
 }
 .course_module button {
-    float: right;
     background-color: black;
     border: 1px solid black;
     width: 200px;
     height: 50px;
-    margin: 50px -60px 0 0;
     padding: 0;
     color: white;
     font-family: 'Amatic SC';
     font-weight: lighter;
     font-size: 25px;
     cursor: pointer;
+    position: absolute;
+    top: 55px;
+    left: 550px;
+}
+
+.course_module button a {
+    color: white;
 }
 
 .bottom_button {
@@ -628,9 +578,10 @@ a,a:active {
     display: table;
     margin: 0 auto;
     font-size: 80px;
-    padding: 3px;
+    padding: 10px 0 20px 0;
     text-align: center;
     font-weight: lighter;
+    line-height: 20px;
 }
 
 .course_text p {
