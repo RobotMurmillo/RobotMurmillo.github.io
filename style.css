@@ -61,7 +61,7 @@ nav {
 .youtube_video iframe {
     width: 650px;
     height: 350px;
-    margin: 150px 0 100px 0;
+    margin: 12% 0 10% 11%;
     position: absolute;
 }
 
@@ -87,7 +87,7 @@ nav {
 
 .video_header { 
     width: 700px;
-    margin: 0 0 100px 200px;
+    margin: 0 0 100px 300px;
     position: relative;
 }
 
