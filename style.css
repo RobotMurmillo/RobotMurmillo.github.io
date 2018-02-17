@@ -171,7 +171,7 @@ nav {
     margin: 400px auto 15% auto;
     font-family: 'Georgia';
 }
-.testimonial_header h1{
+.testimonial_header h1 {
     font-size: 125px;
     font-family: 'Meadowbrook';
     font-weight: lighter;
@@ -188,7 +188,6 @@ nav {
 }
 .testimonial {
     width: 600px;
-    height: 200px;
     margin: 0 auto; 
     padding: 0;
     font-style: italic;
@@ -590,7 +589,7 @@ nav ul li a {
         position: relative;
         width: 90%;
         display: block;
-        margin: 50px auto;
+        margin: 30px auto;
         top: 0;
         left: 0;
     }
@@ -600,11 +599,85 @@ nav ul li a {
         text-align: justify;
     }
 
-    .about_me h1, .about_you h1 {
+    .about_me h1, .about_you h1, .testimonial_header h1, .courses_header h1 {
         font-size: 190px;
     }
 
-   .testimonial_container, .courses_container, .contact_container, .social_container { 
+   .testimonial_container {
+       width: 100%;
+       margin: 200px auto;
+   }
+
+   .testimonial {
+       width: 85%;
+   }
+
+   .quote p, .quote h3 {
+       font-size: 28px;
+   }
+
+   .left_quote, .right_quote {
+    font-size: 50px;
+   }
+
+   .courses_container {
+       width: 100%;
+       margin: 100px auto;
+   }
+
+   .courses_header {
+       width: 95%;
+       text-align: center;
+       margin: 0 auto;
+       padding: 0;
+   }
+
+   .courses_info {
+       width: 90%;
+       font-size: 14px;
+   }
+
+   .course_module {
+    border: 1px solid black;
+    width: 90%;
+    margin: 100px auto;
+    position: relative;
+    }
+
+    .course_module h1 {
+        font-size: 55px;
+        top: -80px;
+        left: -10px;
+    }
+
+    .course_module h2 {
+        font-size: 90px;
+        padding: 0 0 0 15px; 
+        margin: -45px -10px 0 0;
+    }
+
+    .course_module button {
+        font-size: 35px;
+        top: 55px;
+        left: 640px;
+        width: 200px;
+        height: 70px;
+    }
+
+    .course_module .taster {
+        width: 65%;
+        font-size: 30px;
+    }
+    
+    .course_text {
+        width: 90%;
+    }
+
+    .course_text p {
+        font-size: 14px;
+    }
+
+    .contact_container, .social_container { 
         display: none;
     }
 }
