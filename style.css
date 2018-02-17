@@ -645,28 +645,31 @@ nav ul li a {
     }
 
     .course_module h1 {
-        font-size: 55px;
+        font-size: 60px;
         top: -80px;
         left: -10px;
     }
 
     .course_module h2 {
-        font-size: 90px;
-        padding: 0 0 0 15px; 
-        margin: -45px -10px 0 0;
+        font-size: 120px;
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 5%;
     }
 
     .course_module button {
-        font-size: 35px;
+        font-size: 45px;
         top: 55px;
-        left: 640px;
-        width: 200px;
-        height: 70px;
+        left: 550px;
+        width: 250px;
+        height: 90px;
     }
 
     .course_module .taster {
-        width: 65%;
-        font-size: 30px;
+        width: 90%;
+        font-size: 15px;
+        margin: 170px auto 10px auto;
     }
     
     .course_text {
@@ -677,7 +680,15 @@ nav ul li a {
         font-size: 14px;
     }
 
+    .bottom_button {
+        font-size: 150px;
+        padding: 10px 0 20px 0;
+        line-height: 20px;
+    }
+
     .contact_container, .social_container { 
         display: none;
     }
+
+
 }
