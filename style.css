@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0; 
     background-color: #fefdfb;
+    width: 100%;
 }
 
 .title {
@@ -50,7 +51,7 @@ nav {
 
 .video_container {
     margin: 150px auto 200px auto;
-    width: 900px;
+    width: 1200px;
 }
 
 .youtube_video {
@@ -167,7 +168,7 @@ nav {
     z-index: -1;
 }
 .testimonial_container {
-    width: 700px;
+    width: 1200px;
     margin: 400px auto 15% auto;
     font-family: 'Georgia';
 }
@@ -236,7 +237,7 @@ nav {
 }
 
 .contact_container {
-    width:750px; 
+    width:1200px; 
     margin:0 auto;
 }
 
@@ -289,7 +290,7 @@ a, a:active {
 }
 
 .social_container {
-    width: 700px; 
+    width: 1200px; 
     margin: 10% auto 0 auto;
 }
 
@@ -350,6 +351,7 @@ nav ul li a {
 }
 
 .courses_container {
+    width: 1200px;
     margin: 150px auto;
 }
 
@@ -494,7 +496,7 @@ nav ul li a {
         position: relative;
         left: 0; 
         top: 0;
-        margin: 0 auto; 
+        margin: 5px auto; 
         padding: 0;
         font-size: 50px;
     }
@@ -552,14 +554,58 @@ nav ul li a {
 
     .youtube_video iframe {
         top: 300px;
-        margin: 100px auto;
+        margin: 100px auto 0 auto;
         position: relative;
         display: block;
         width: 90%;
         height: 450px;
     }
 
-    .about_me_container, .about_you_container, .testimonial_container, .courses_container, .contact_container, .social_container { 
+    .about_me_container, .about_you_container {
+        display: block; 
+        position: relative;
+        width: 100%;
+        margin: 500px auto 100px auto;
+    }
+
+    .about_you_container {
+        margin-top: 1000px;
+        background-color: pink;
+    }
+
+    .about_me_image, .about_you_image {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        top: 0; 
+        left: 0;
+    }
+
+    .about_you {
+        display: block;
+        margin: 900px;
+        top: 500px;
+    }
+
+    .about_me, .about_you {
+        position: relative;
+        width: 80%;
+        display: block;
+        margin: 100px auto;
+        top: 0;
+        left: 0;
+    }
+
+    .about_me p, .about_you p {
+        font-size: 25px;
+    }
+
+    .about_me h1, .about_you h1 {
+        font-size: 160px;
+    }
+
+   .testimonial_container, .courses_container, .contact_container, .social_container { 
         display: none;
     }
 }
