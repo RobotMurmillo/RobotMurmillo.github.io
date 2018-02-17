@@ -71,16 +71,18 @@
                 });
                 function parallaxScroll(){
                     var scrolledY = $(window).scrollTop();
-                    scrolledY > 700 && scrolledY < 3000 ? 
-                    $('.about_me_image').css('top','+' + (((scrolledY-1500)*0.1)) + 'px') 
-                    : $('.about_me_image').css('top','+' + 0 + 'px');
-                    scrolledY > 2000 && scrolledY < 4000 ? 
-                    $('.about_you_image').css('top','+' + (((scrolledY-700)*0.09)) + 'px') 
-                    : $('.about_you_image').css('top','+' + 200 + 'px');
-                    scrolledY > 600 && scrolledY < 1700 ? 
-                    $('.youtube_video iframe').css('top','+' + (((scrolledY)*0.05)) + 'px') 
-                    : $('.youtube_video iframe').css('top','+' + 90 + 'px');
-  
+                    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+                        if (!isMobile) {
+                        scrolledY > 700 && scrolledY < 3000 ? 
+                        $('.about_me_image').css('top','+' + (((scrolledY-1500)*0.1)) + 'px') 
+                        : $('.about_me_image').css('top','+' + 0 + 'px');
+                        scrolledY > 2000 && scrolledY < 4000 ? 
+                        $('.about_you_image').css('top','+' + (((scrolledY-700)*0.09)) + 'px') 
+                        : $('.about_you_image').css('top','+' + 200 + 'px');
+                        scrolledY > 600 && scrolledY < 1700 ? 
+                        $('.youtube_video iframe').css('top','+' + (((scrolledY)*0.05)) + 'px') 
+                        : $('.youtube_video iframe').css('top','+' + 90 + 'px');
+                    }
                 }
             });           
         </script>
@@ -90,15 +92,16 @@
         </div>
         <nav> 
             <ul>
-                <li>About</li>
-                <li>Programmes</li>
-                <li>Contact</li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#programmes'>Programmes</a></li>
+                <li><a href='#contact'>Contact</a></li>
             </ul>
         </nav>
         <div class = 'header'>
             <img id='desktopimage'src='images/headerphoto.jpg' alt='Katheryn Hope'>
             <img id='mobileimage'src='images/headerphoto_mob.png' alt='Katheryn Hope'>
         </div>
+        <a name ='about'></a>
         <div class='video_container'>
                 <div class = 'video_header'>
                     <h2>Become</h2>
@@ -106,9 +109,9 @@
                     <h3>learn more</h3>
                 </div>
             <div class = 'youtube_video'>
-                        <iframe src="https://www.youtube.com/embed/hY7m5jjJ9mM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/6uFXxUU9BTI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-        </div>
+        </div>  
         <div class='about_me_container'>
                 <div class='about_me_image'>
                     <img src='images/about_me_photo.jpg' alt="about Katheryn">
@@ -136,7 +139,7 @@
                 <div class='about_you_image'>
                     <img src='images/about_you.jpg' alt="about Katheryn">
                 </div> 
-            </div>  
+            </div> 
                 <div class='testimonial_container'>
                     <div class= 'testimonial_header'>
                         <h1>testimonials</h1>
@@ -150,7 +153,7 @@
                                     <h3> - Clare Griffiths, Liverpool</h3>
                                 </div>
                                 <div id="testimonial-2" class='quote'>
-                                    <p>Coaching with Katheryn is lifechanging. It has played a vital role in some wonderful transformations in my life. She is a wealth of knowledge and inspiration.</p>
+                                    <p>Coaching with Katheryn is life changing. It has played a vital role in some wonderful transformations in my life. She is a wealth of knowledge and inspiration.</p>
                                     <h3> - Rowan Day, Devon</h3>
                                 </div>
                                 <div id="testimonial-3" class='quote'>
@@ -194,6 +197,7 @@
                         <div class='right_quote'><h1>"</h1></div>
                     </div>
                 </div> 
+                <a name ='programmes'></a>
                 <div class='courses_container'>
                     <div class= 'courses_header'>
                             <h1>Programmes</h1>
@@ -245,6 +249,7 @@
                                     <div class='bottom'><h4 class='bottom_button'>+</h4></div>
                                 </div>
                     </div>
+                    <a name ='contact'></a>
                     <div class='contact_container'>
                             <div class= 'contact_header'>
                                 <h1>Contact</h1>

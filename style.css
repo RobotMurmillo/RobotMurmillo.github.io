@@ -15,20 +15,36 @@
     padding: 0; 
     background-color: #fefdfb;
 }
+
+.title {
+    position: relative
+}
 .title h1 {
     font-family: 'Meadowbrook';
     font-weight: lighter;
+    width: 800px;
+    font-size: 160px;
+    margin: 0 0.5%;
+    color: #1a1919;
 }
 .title h3 {
     font-family: 'Amatic SC', cursive;
     font-size: 35px;
+    position: absolute;
     letter-spacing: 0.1em;
-    padding: 0;
+    text-align: center;
+    top: 120px;
+    left: 450px;
 }
 nav {
     font-family: 'Amatic SC', cursive;
     font-weight: lighter;
     font-size: 28px;
+    max-width: 95%;
+    min-width: 1200px;
+    text-align: right;
+    margin: 50px auto;
+    padding: 0;
 }
 
 
@@ -41,10 +57,9 @@ nav {
     position:relative;
 }
 
-
 .youtube_video iframe {
     width: 650px;
-    height: 365px;
+    height: 350px;
     margin: 150px 0 100px 0;
     position: absolute;
 }
@@ -91,45 +106,6 @@ nav {
     top: 180px;
 }
 
-@media screen and (max-device-width: 500px) {
-    body {
-        background-color: pink;
-    }
-
-    .video_container {
-        width: 80%; 
-        margin: 0 auto;
-    }
-
-    .youtube_video iframe {
-        width: 100%; 
-        height: 400px;
-        margin: 0 auto;
-    } 
-
-    .video_header {
-        width: 100%; 
-        margin: 5% auto;
-    }
-
-    .video_header h1 {
-        text-align: center;
-        padding: 0;
-        
-    }
-
-    .video_header h3 {
-        margin: -30px 70px 0 0;
-        padding: 0;
-        font-size: 45px;
-    }
-
-    .video_header h2 {
-        margin: 0 0 -60px 0;
-        font-size: 45px;
-    }
-}
-
 .about_me_container, .about_you_container {
     width: 1200px;
     height: 500px;
@@ -157,12 +133,10 @@ nav {
     left: 580px;
     top: 200px;
 }
-.about_me_image img {
+.about_me_image img, .about_you_image img {
     width: 100%;
 }
-.about_you_image img {
-    width: 100%; 
-}
+
 .about_me {
     width: 480px;
     margin: -35% 0 0 56%;
@@ -171,9 +145,7 @@ nav {
     width: 480px;
     margin: 4%;
 }
-.about_me_text {
-    width: 100%;
-}
+
 .about_me p, .about_you p {
     font-family: 'Georgia';
     font-size: 16px;
@@ -355,122 +327,26 @@ a, a:active {
     width: 100px;
 }
 
-
-
-@media screen and (max-width:650px), (max-device-width: 600px) {
-    /* Mobile Version */
-    .title {
-        background-color: #fefdfb;
-        width: 100%;
-        text-align: center;
+nav ul li {
+    padding: 0 30px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;    
     }
 
-    .title h1 {
-        font-size: 75px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .title h3 {
-        font-size: 25px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-    #desktopimage {
-        display: none;
-    }
-    .header img {
-        margin: 50px 5% 130px 5%;
-        width: 90%;
-   }    
-    nav {
-        display: none;
-    }
-
-    .about_me_container, .about_you_container {
-        width:100%;
-        height: auto;
-    }
-    .about_me_image, .about_me, .about_you_image, .about_you {
-        margin: 0 auto;
-        display: block;
-    }
-    .about_me_image, .about_you_image {
-        width: 90%;
-    }
-    .about_me, .about_you {
-        width: 90%;
-    }
-    .about_me p, .about_you p {
-        font-size: 16px;
-        line-height: 50px;
-    }
-    .testimonial_container {
-        width: 100%;
-    }
-    .testimonial_header h1 {
-        font-size: 130px;
-    }
-    .testimonial {
-        width: 90%;
-    }
-
-    .quote p {
-        text-align: center;
-        font-size:30px;
-    }
-    .quote h3 {
-        font-size: 25px;
-        padding: 0;
-        margin: 0;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+nav ul li a {
+    color: black;
 }
 
-@media screen and (min-width:650px) {
-    /* Desktop Version */
-    nav {
-        float: right;
-        width: 100%;
-        text-align: right;
-        padding: 10px;
+.header {
+    text-align: center;
+    margin: 0 2.5% 50px 2.5%;
+    max-width: 95%;
+    min-width: 1200px;
     }
 
-    nav ul li {
-        padding: 0 2%;
-        text-align: center;
-    }
-
-    .header {
-        text-align: center;
-        margin: 100px 2.5% 50px 2.5%;
-        max-width: 95%;
-    }
-
-    #mobileimage {
-        display: none;
-    }
-
-    .header img {
-        width: 100%; 
-    }
-
-    .title h1 {
-        font-size: 160px;
-        margin: 0 0.5%;
-    }
-
-    .title h3 {
-        margin: 0;
-        padding-left: 450px;
-    }
-
-    nav ul li {
-        display: inline-block;
-        text-decoration: none;
-    }
-
+.header img {
+    width: 100%; 
 }
 
 .courses_container {
@@ -568,9 +444,6 @@ a, a:active {
     left: 550px;
 }
 
-.course_module button a {
-    color: white;
-}
 
 .bottom_button {
     font-family: 'Meadowbrook';
@@ -588,57 +461,105 @@ a, a:active {
     font-size: 17px;
 }
 
-@media screen and (max-device-width: 500px) {
-    .courses_container {
+@media only screen and (min-device-width: 501px) {
+    #mobileimage {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    #desktopimage {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
         margin: 0 auto;
-        width: 90%;
-    }
-
-    .course_module {    
-        width: 90%; 
-        margin: 100px auto;
-    }
-
-    .course_module h1 {
-        font-size: 90px;
-    }
-
-    .course_module h2 {
-        margin: 0;
-        text-align: left;
-        font-size: 90px;
-        width: 50%;
-        float: left;
-        margin: 1% 1% 2% 5%;
-
-    }
-    .course_module .taster {
-        width: 80%;
-        margin: 15% auto 0 auto;
-        font-size: 13px;
-        display: block;
-    }
-    .course_module button {
-        float: right;
-        background-color: black;
-        border: 1px solid black;
-        width: 250px;
-        height: 60px;
-        margin: 20px 40px 0 0;
         padding: 0;
-        color: white;
-        font-family: 'Meadowbrook';
-        font-weight: lighter;
-        font-size: 45px;
-        vertical-align: text-top;
+        text-align: center;
+        width: 100%;
+        font-size: 190px;
     }
 
-    .course_text {
-        width: 80%;
+    .title h3 {
+        width: 100%; 
+        text-align: center;
+        position: relative;
+        left: 0; 
+        top: 0;
+        margin: 0 auto; 
+        padding: 0;
+        font-size: 50px;
+    }
+
+
+    .video_header {
+        display: block;
+        position: relative;
+    }
+
+    .video_header h1 { 
+        left: 70px;
+    }
+
+    .video_header h2 {
+        left: 20px;
+        top: 10px;
+        font-size: 60px;
+    }
+
+    .video_header h3 {
+        left: 70%;
+        font-size: 50px;
+    }
+
+    .header { 
+        width: 90%;
+        min-width:0;
+        margin: 20px auto 50px auto;
+
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+    .video_container {
+        width: 100%;
         margin: 0 auto;
     }
+    .video_header {
+        margin: 100px auto;
+        display: block;
+        position: relative;
+        width: 90%;
+        background-color: pink;
+    }
 
-    .course_text p {
-        font-size: 12px;
+    .youtube_video { 
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 100px auto 0 auto;
+    }
+
+    .youtube_video iframe {
+        top: 300px;
+        margin: 100px auto;
+        position: relative;
+        display: block;
+        width: 90%;
+        height: 450px;
+    }
+
+    .about_me_container, .about_you_container, .testimonial_container, .courses_container, .contact_container, .social_container { 
+        display: none;
     }
 }
