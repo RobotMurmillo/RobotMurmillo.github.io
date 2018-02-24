@@ -160,7 +160,7 @@ nav {
     z-index: 1;
 }
 .about_me_line, .about_you_line {
-    background-color: black;
+    background-color: #070906;
     max-width: 240px;
     min-width: 240px;
     height: 3px;
@@ -180,7 +180,7 @@ nav {
     text-align: center;
 }
 .testimonial_line {
-    background-color: black;
+    background-color: #070906;
     max-width: 480px;
     min-width: 240px;
     height: 3px;
@@ -245,8 +245,8 @@ nav {
 .submit {
     width: 200px;
     height: 60px;
-    color: white; 
-    background-color: black;
+    color: #ffffff; 
+    background-color: #070906;
     font-family: 'Amatic SC';
     font-size: 30px;
     font-weight: lighter;
@@ -258,7 +258,7 @@ nav {
 
 a, a:active {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 .contact_text {
@@ -284,7 +284,7 @@ a, a:active {
 }
 
  .contact_line {
-    background-color: black;
+    background-color: #070906;
     max-width: 400px;
     min-width: 200px;
     height: 3px;
@@ -297,7 +297,7 @@ a, a:active {
 }
 
 .social_line {
-    background-color: black;
+    background-color: #070906;
     height: 3px;
     width: 700px;
     text-align: center;
@@ -345,7 +345,7 @@ nav ul li {
     }
 
 nav ul li a {
-    color: black;
+    color: #070906;
 }
 
 .header {
@@ -374,7 +374,7 @@ nav ul li a {
 }
 
 .course_module {
-    border: 1px solid black;
+    border: 1px solid #070906;
     width: 800px;
     margin: 100px auto;
     position: relative;
@@ -442,18 +442,18 @@ nav ul li a {
 }
 
  .courses_line {
-    background-color: black;
+    background-color: #070906;
     max-width: 240px;
     min-width: 240px;
     height: 3px;
 }
 .course_module button {
-    background-color: black;
-    border: 1px solid black;
+    background-color: #070906;
+    border: 1px solid #070906;
     width: 200px;
     height: 50px;
     padding: 0;
-    color: white;
+    color: #ffffff;
     font-family: 'Amatic SC';
     font-weight: lighter;
     font-size: 28px;
@@ -654,7 +654,7 @@ nav ul li a {
    }
 
    .course_module {
-    border: 1px solid black;
+    border: 1px solid #070906;
     width: 90%;
     margin: 100px auto;
     position: relative;
