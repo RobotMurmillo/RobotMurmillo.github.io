@@ -570,8 +570,8 @@ nav ul li a {
         margin: 100px auto 0 auto;
         position: relative;
         display: block;
-        width: 90%;
-        height: 450px;
+        height: 480px;
+        width:385px;
     }
 
     .about_me_container, .about_you_container {
