@@ -138,12 +138,12 @@ nav {
 }
 
 .about_me {
-    width: 480px;
+    width: 520px;
     margin: -35% 0 0 56%;
 }
 .about_you {
-    width: 480px;
-    margin: 4%;
+    width: 520px;
+    margin: 2%;
 }
 
 .about_me p, .about_you p {
@@ -427,6 +427,7 @@ nav ul li a {
     text-align: justify;
 }
 
+
 .courses_header {
     width: 800px;
     margin: 50px auto 0 auto;
@@ -602,7 +603,7 @@ nav ul li a {
 
     .about_me, .about_you {
         position: relative;
-        width: 90%;
+        width: 100%;
         display: block;
         margin: 30px auto;
         top: 0;
@@ -610,7 +611,7 @@ nav ul li a {
     }
 
     .about_me p, .about_you p {
-        font-size: 13px;
+        font-size: 12px;
         text-align: justify;
     }
 
